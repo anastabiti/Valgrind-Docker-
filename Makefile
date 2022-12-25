@@ -6,12 +6,12 @@
 #    By: atabiti <atabiti@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/08 13:08:46 by atabiti           #+#    #+#              #
-#    Updated: 2022/12/25 11:05:40 by atabiti          ###   ########.fr        #
+#    Updated: 2022/12/25 11:17:29 by atabiti          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CMD:
-		mkdir -p /Users/atabiti/Desktop/shared_folder
+		mkdir -p /Users/$(USER)/Desktop/shared_folder
 	 cd srcs &&    docker-compose up --build -d
 stop:
 	 cd srcs &&  docker-compose down
