@@ -1,0 +1,20 @@
+version: '3.7'
+networks:
+  docker-network:
+volumes:
+  database:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /Users/atabiti/Desktop/shared_folder 
+services:
+  valgrind:
+    image: valgrind
+    container_name: valgrind
+    build: ./requirements/valgrind
+    networks:
+      -  docker-network
+    volumes:
+      - database:/shared_folder
+    env_file: ./.env
