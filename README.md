@@ -7,4 +7,4 @@ Valgrind is an instrumentation framework for building dynamic analysis tools ,an
 ## What are Bind Mounts in Docker?
  A Bind Mount is a storage area (file/directory) on your local machine available inside your container. So any changes you make to this storage space (file/directory) from the outside container will be reflected inside the docker container and vice-versa.
 ## WHAT IS INCLUDED
- valgrind, clang and make.
+ valgrind, git, clang and make.
