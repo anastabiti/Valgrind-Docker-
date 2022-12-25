@@ -17,4 +17,3 @@ services:
       -  docker-network
     volumes:
       - database:/shared_folder
-    env_file: ./.env
